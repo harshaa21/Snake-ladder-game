@@ -3,7 +3,7 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class Main extends SnakeNLadder {
 	public static void main(String[] args) {
 		SnakeNLadder snakeLadder = new SnakeNLadder();
 		snakeLadder.startGame();
@@ -75,7 +75,7 @@ class SnakeNLadder {
 		    System.out.println("Press 'r' to roll Dice");
 		    rPressed=scan.next();
 		    diceValue=rollDice();
-
+			System.out.println("Dice Value: "+diceValue);
 		    if (currentPlayer==-1) {
 		      player1Position=calculatePlayerValue(player1Position, diceValue);
 		      System.out.println("First Player Position:"+player1Position);
