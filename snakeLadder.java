@@ -3,10 +3,10 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main extends SnakeNLadder {
+public class Main extends snakeLadder {
 	public static void main(String[] args) {
-		SnakeNLadder snakeLadder = new SnakeNLadder();
-		snakeLadder.startGame();
+		snakeLadder snakeLadder_obj = new snakeLadder();
+		snakeLadder_obj.startGame();
 	}
 } 
 
